@@ -31,10 +31,7 @@ class MainWindow(QMainWindow):
         
         
     def initUI(self):  
-
- 
-
-        plotFunctionAction = QAction(QIcon('plotIcon.png'), 'Plot f(x)', self)        
+        plotFunctionAction = QAction(QIcon('plotIcon.png'), 'Plot f(x)', self)
         plotFunctionAction.setShortcut('Ctrl+P')
         plotFunctionAction.setStatusTip('Plot a function f(x)')
         plotFunctionAction.triggered.connect(self.plotFunctionButtonClicked)     
@@ -75,7 +72,6 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(self.plotDataWidget)
       
 class PlotFunctionWidget(QWidget):
-    
     def __init__(self):
         super().__init__()
         
